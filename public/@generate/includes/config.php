@@ -1,6 +1,6 @@
 <?php
 define('DB_USER_ROOT', 'root');
-define('DB_PASSWORD_ROOT', 'root');
+define('DB_PASSWORD_ROOT', '');
 define('DB_HOST_ROOT', 'localhost');
 
 define('PATH_CONTROLLER', '../../application/controllers/admin/');

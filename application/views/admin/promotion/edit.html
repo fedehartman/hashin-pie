@@ -1,0 +1,43 @@
+<div class="block">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="first">{list_link}</li>
+			<li class="active">{new_link}</li>
+		</ul>
+	</div>
+	<div class="content">
+		{msg_error}
+		<h2 class="title">Edit Promociones</h2>
+		<div style="clear:both;"></div>
+		<div class="inner">
+			{start_form}
+			<input type="hidden" name="id" id="id" value="{id}" />
+			<input type="hidden" name="submit" id="submit" value="true" />
+			<div class="columns wat-cf">
+				<div class="column left">
+					<div class="group">
+						<label class="label" for="titulo" >Titulo: </label>
+						<input type="text" class="text_field required" name="titulo" id="titulo" value="{titulo}" maxlength="255" />
+					</div>
+					<div class="group">
+						<label class="label" for="foto" >Foto: </label>
+						<input type="text" class="text_field " name="foto" id="foto" value="{foto}" maxlength="255" />
+					</div>
+					<div class="group">
+						<label class="label" for="descripcion" >Descripcion: </label>
+						<textarea class="text_area" name="descripcion" id="descripcion" rows="4" cols="50" >{descripcion}</textarea>
+					</div>
+				</div>
+				<div class="column right"> 
+				</div>
+			</div>
+			<div class="group navform wat-cf">
+				{btn_save}
+				<span class="text_button_padding">or</span>
+				{close}
+			</div>
+			{end_form}
+		</div>
+	</div>
+</div>
+{js_promotion}
