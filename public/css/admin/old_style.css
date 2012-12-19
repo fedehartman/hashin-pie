@@ -1,0 +1,209 @@
+/* 
+    Document   : style
+    Created on : 10/10/2009, 05:11:52 PM
+    Author     : Nicolas
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+body {
+        font-family: Arial, sans-serif;
+        font-size: 0.85em;
+}
+p {
+        margin: 1em 0;
+}
+
+a {
+	color: #6699cc;
+	text-decoration:none;
+}
+
+#menu_contenedor
+{
+	margin-left:5px;
+	margin-top:10px;
+	
+}
+
+.menu_ppal{	
+	list-style-type:none;
+	padding:0;
+	font-size:15px;
+	display:inline;
+	
+}
+/*	.menu_ppal ul {	 padding-left: 15px; }*/
+
+.menu_ppal li {
+	margin-top:5px;
+}
+
+.menu_ppal a{
+	text-decoration:none;
+	color: black;	
+}
+
+.menu_ppal a:hover{	
+	color:blue;
+	text-decoration:none;
+}
+
+
+#top_box{
+	width:98%;
+	padding: 5px;
+	padding-left: 20px;
+	vertcal-align:middle;
+	margin-bottom:7px;
+	height: 39px;
+	background:#F0F0F0 url(../../img/admin/bg_header_content.png) repeat-x scroll 0 bottom
+}
+#top_box h2{
+	margin:0;
+	padding-bottom:3px;
+}
+
+#logged-user{
+	float:right;
+}
+
+#logged-user-data-left{
+	float:left;
+	background:url(../../img/admin/bg_data_left.png) no-repeat scroll 0 bottom;
+	width:14px;	
+	height: 50px;
+}
+
+#logged-user-data-right{
+	float:left;
+	background:url(../../img/admin/bg_data_right.png) no-repeat scroll 0 bottom;
+	width:14px;	
+	height: 50px;
+}
+
+#logged-user-data{
+	float:left;
+	height: 50px;
+	background:url(../../img/admin/bg_data_middle.png) repeat-x scroll 0 bottom
+}
+
+#logged-user-data p{
+	padding-top:4px;
+}
+
+#logo{
+	float:left;
+	width:217px;	
+}
+
+#container{
+	padding:20px;
+}
+
+
+.stripeMe th {
+	height: 24px;
+	border-right: 1px solid #CCCCCC;
+	padding-left:3px;
+	background:#F9F9F9 url(../../img/admin/grid3-hrow.gif) repeat-x scroll 0 bottom
+}
+
+.stripeMe td {
+	padding: 1px 1px;
+	border-bottom: 1px solid #bbb;
+	vertical-align: middle;
+}
+
+.stripeMe td * {
+	padding: 1px 1px;
+}
+
+.stripeMe tr.alt td {
+	background: #f3f3f3;
+}
+
+.stripeMe tr.over td {
+	background: #ffdf83;
+	border-bottom: 1px solid #faca45;
+}
+
+.stripeMe tr.inactivo td {
+	color: #999 !important;
+}
+
+.stripeMe tr.deleted { color: #999; }
+
+table.centrada td { text-align:center; }
+
+.ico-16 {
+	width:16px;
+	height:20px;
+}
+
+
+
+.verticaltext {
+	writing-mode: tb-rl;
+	filter: flipv fliph;
+}
+
+div.paginadoCatalogo p span{
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+
+
+/*formularios */
+/*DL, DT, DD TAGS LIST DATA*/
+dl {
+}
+
+dl dt {
+	color:#000;
+	float:left;
+	font-weight:bold;
+	margin-right:10px;
+	padding:5px;
+	width:150px;
+}
+
+dl dd {
+	margin:2px 0;
+	padding:5px 0;
+	width:500px;
+}
+
+
+/*VALIDACION*/
+.LV_validation_message{
+    margin:0 0 0 5px;
+	font-size:9px !important;
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+	
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+    border: 1px solid #00CC00;
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+    border: 1px solid #CC0000;
+}

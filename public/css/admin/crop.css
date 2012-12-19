@@ -1,0 +1,25 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.btn_container {
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:3000;
+    padding: 10px;
+    background-color: #FFFFFF;
+    FILTER: alpha(opacity=80);
+    opacity:0.8;
+    zoom:1;
+    border: 2px #999 solid;
+}
+
+div.btn_container a {
+    color: #666666;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80%;
+}

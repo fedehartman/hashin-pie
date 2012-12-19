@@ -1,0 +1,118 @@
+div#header { background-color: #EEE; }
+div#header h1 a,
+div#header h1 a:link,
+div#header h1 a:active,
+div#header h1 a:hover,
+div#header h1 a:visited { color: #F8980A; }
+
+div.login form { padding: 40px 0 25px 0; }
+
+button.button img, a.button img {
+  margin:0 3px 0 0 !important;
+}
+
+#user-navigation li.logout a {
+  background: #666;
+  color: #FFFFFF !important;
+  padding: 2px 8px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 3px;
+}
+
+#main {
+width: 73%;
+float: right;
+}
+
+#sidebar {
+float: left;
+}
+
+.table th .checkbox { margin-left: 0; }
+
+.form input.fecha {
+  width:100px;
+  border: 1px solid #cfcfcf;
+}
+
+tr.over { background: #EAEAEA !important; }
+
+#main .block .content h2 { float: left; }
+
+div.btn_right_container { float:right; margin-top: 13px; }
+
+.pagination select {
+  float: left;
+  margin-right: 5px;
+  padding: 4px;
+}
+
+.pagination span.disabled { color: #999999; }
+
+.message { clear: both; }
+
+.contact_zoom_cont {
+    padding: 0 30px 30px 30px;
+}
+
+.contact_zoom_cont p {
+    padding: 0 40px;
+}
+
+.contact_zoom_cont h2 {
+    margin-bottom: 30px;
+}
+
+div.sidebar_form { padding: 15px; }
+
+div.sidebar_form label { font-weight: bold; font-size: 14px; }
+
+div.sidebar_form form textarea { margin: 10px 0 !important; }
+
+.select_field  { width: 100%; }
+
+.submenu {
+    /*font-weight: bold;*/
+    background-color: #cfcfcf;
+}
+
+.sub_navigation {
+    margin-left: 30px;
+    list-style: none;
+}
+
+#sidebar ul li {
+    background-position: 328px 11px;
+    background-image: url("images/arrow_right.png");
+}
+#sidebar ul li:hover {
+    background-color: #cfcfcf;
+    background-image: none;
+}
+
+#sidebar ul.sub_navigation li { background-position: 298px 11px; }
+#sidebar ul li a { margin-left: 0; }
+#sidebar ul li.submenu_container { background: none; }
+#sidebar ul li.submenu_container a.tit_submenu { font-size: 13px; }
+#sidebar h3 { font-weight: bold; background-color: #cfcfcf; }
+
+.secondary-navigation {
+    background-image: none;
+    background-color: #CCCCCC;
+}
+
+.filtro_fecha{
+  width:100px;
+  border: 1px solid #e2e2e2;
+}
+
+.filtro_fecha input:hover {
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #a2a294;
+}
+
+.filtro_fecha input:focus {
+  border: 1px solid #a2a294;
+}

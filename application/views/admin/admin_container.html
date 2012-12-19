@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{title}</title>
+{css_style}
+{css_theme}
+{css_custom}
+{css_colorbox}
+{css_smoothness}
+{js_jquery}
+{js_jquery_ui_all}
+{js_jquery_form}
+{js_funciones}
+{js_livevalidation_min}
+{js_scrollTo}
+{js_localscroll}
+{js_container}
+{js_image}
+{js_colorbox}
+{js_tablednd}
+{js_tinymce}
+<link rel="shortcut icon" type="image/x-icon" href="{BASE_PATH}/img/front/favicon.ico" />
+<script type="text/javascript" >
+    var BASE_PATH = '{BASE_PATH}';
+</script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><a href="{BASE_PATH}/user/index">{proj_title}</a></h1>
+            <div id="user-navigation">
+                <ul class="wat-cf">
+                    <li class="logout" >{logout}</li>
+                </ul>
+            </div>
+            <div id="main-navigation">
+                <ul class="wat-cf">
+                    <li class="first {active_home}"><a href="{BASE_PATH}/admin/main/index">Website CMS</a></li>
+                    <li class="{active_profile}"><a href="{BASE_PATH}/admin/user/add/{id_usuario}">Your Profile</a></li>
+                    <li><a href="{BASE_PATH}" target="_blank" >Visit Website</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper" class="wat-cf">
+            <div id="main">
+                
+                {CONTENT}
+                
+                <div id="footer">
+                    <div class="block">
+                        <p>{anio} - {title}</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="block">
+                    <h3>Main Menu</h3>
+                    <ul class="navigation" id="menu">
+                        <li class="submenu_container">{menu_users}</li>              
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

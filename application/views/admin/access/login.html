@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{title}</title>
+  {css_1}
+  {css_2}
+  {css_3}
+</head>
+<body>
+  <div id="container">
+    <div id="box">
+      <h1>Content Management System - Login</h1>
+      <div class="block" id="block-login">
+        <h2>{title_legend}</h2>
+        <div class="content login">
+            {msg_error}
+          <form action="" class="form login" method="post" >
+            <div class="group wat-cf">
+              <div class="left">
+                <label class="label right" for="username" >Login</label>
+              </div>
+              <div class="right">
+                <input type="text" class="text_field" name="username" id="username" />
+              </div>
+            </div>
+            <div class="group wat-cf">
+              <div class="left">
+                <label class="label right" for="password">Password</label>
+              </div>
+              <div class="right">
+                <input type="password" class="text_field" id="password" name="password" />
+              </div>
+            </div>
+              <input type="hidden" name="submit" value="true" />
+            <div class="group navform wat-cf">
+              <div class="right">
+                <button class="button" type="submit">
+                  {icon_key} Login
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    <p><center>2011 - {title}</center></p>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+/*	
+	<div class="info">Info message</div>
+        <div class="success">Successful operation message</div>
+        <div class="warning">Warning message</div>
+        <div class="error">Error message</div>
+*/
+body{
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:13px;
+}
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../../img/admin/messages/knob_info.png');
+}
+.info a { color: #00529B !important; }
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../../img/admin/messages/knob_valid green.png');
+}
+
+.success_help {
+    margin-top: 25px;
+    background-image: none;
+}
+
+.success_help a {
+    text-decoration: underline;
+}
+
+.success a {
+    color: #4F8A10 !important;
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../../img/admin/messages/knob_attention.png');
+}
+.warning a {
+    color: #9F6000 !important;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../../img/admin/messages/knob_remove_red.png');
+}
+.error a {
+    color: #D8000C !important;
+}
+

@@ -1,0 +1,22 @@
+/**********************************************/
+/*      		   LOGIN                      */
+/**********************************************/
+body {
+	background-color: #DCDDDF; font-family: Tahoma;
+	border: 0px; margin: 0px; padding: 0px;
+	vertical-align:middle; margin-top: 100px;
+	}
+	
+fieldset {
+	border: 0px; background-image: url(../../img/admin/login_recuadro.jpg);
+	width: 422px; height: 230px; margin: auto; padding: 0px; padding-top: 100px;
+}
+
+div.cont { width: 150px; margin: auto; }
+input { width: 140px; }
+legend { display: none; } 
+label { display: block; }
+p.submit { text-align: center; }
+	p.submit input { width: 100px; }
+
+div.rojoPeq { font-size: 9px; color: #C10000; width: 250px; margin: auto; text-align:center; font-weight: bold; }

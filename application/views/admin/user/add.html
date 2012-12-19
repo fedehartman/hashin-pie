@@ -1,0 +1,55 @@
+<div class="block" >
+    <div class="secondary-navigation">
+        <ul class="wat-cf">
+            <li class="first">{list_users_link}</li>
+            <li class="active">{new_user_link}</li>
+        </ul>
+    </div>
+    <div class="content">
+        {msg_error}
+        <h2 class="title">{titulo_accion}</h2>
+        <div style="clear:both;"></div>
+        <div class="inner">
+            {start_form}
+            <input type="hidden" name="id" id="id" value="{id_user}" />
+            <input type="hidden" name="submit" id="submit" value="true" />
+            <div class="columns wat-cf">
+                <div class="column left">
+                    <div class="group">
+                        <label class="label" for="usuario" >Login: </label>
+                        <input type="text" class="text_field" name="usuario" id="usuario" value="{usuario_user}" maxlength="20" />
+                        <span class="description">Ex: administrator</span>
+                        </div>
+                    <div class="group">
+                        <label class="label" for="nombre" >Name and Surname: </label>
+                        <input type="text" class="text_field" name="nombre" id="nombre" value="{nombre_user}" maxlength="30" />
+                        <span class="description">Ex: John Doe</span>
+                        <br/>{mod_pass}
+                    </div>                    
+                    <div id="cont_pass" {display_pass}>
+                        <div class="group">
+                            <label class="label" for="clave" >Password: </label>
+                            <input type="password" class="text_field" name="clave" id="clave" maxlength="20" />
+                            <span class="description">&nbsp;</span>
+                        </div>
+                        <div class="group">
+                            <label class="label" for="clave2" >Repeat Password: </label>
+                            <input type="password" class="text_field" name="clave2" id="clave2" maxlength="20" />
+                            <span class="description">&nbsp;</span>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="column right">                      
+
+                </div>
+            </div>
+            <div class="group navform wat-cf">
+                {btn_save}
+                <span class="text_button_padding">or</span>
+                {close}
+            </div>
+            {end_form}
+        </div>
+    </div>
+</div>
+{js_usuario}
