@@ -38,3 +38,6 @@ define('IMG_MAX_WIDTH',980);
 define('ABS_PATH',getcwd());
 define('UPLOAD_DIR',ABS_PATH.'/uploads/');
 
+define('IMAGES_UPLOAD_DIR',ABS_PATH.'/uploads/images/');
+define('IMAGES_DIR',BASE_PATH.'/uploads/images/');
+
