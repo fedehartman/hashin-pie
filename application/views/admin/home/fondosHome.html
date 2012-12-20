@@ -1,0 +1,60 @@
+<style type="text/css">
+.imagen{
+  margin-top: 10px;
+}
+</style>
+
+<div class="block">
+  <div class="content">
+    {msg_error}
+    <h2 class="title">Imagenes de fondo</h2>
+    <div style="clear:both;"></div>
+    <div class="inner">
+      {start_form}
+      <input type="hidden" name="submit" id="submit" value="true" />
+      <div class="columns wat-cf">
+        <div class="column left">
+
+          <div class="group">
+            <label class="label" for="fondo_1" >Fondo 1: </label>
+            <input type="file" name="fondo_1" id="fondo_1" />
+            <!-- START BLOCK : IMAGEN_1  -->
+            <img class="imagen" width="200" src="{src}">
+            <input type="hidden" value="{id}" name="imagen_id[]" >
+            <!-- END BLOCK : IMAGEN_1 -->
+            
+
+          </div>
+
+          <div class="group">
+            <label class="label" for="fondo_2" >Fondo 2: </label>
+            <input type="file" name="fondo_2" id="fondo_2" />
+            <!-- START BLOCK : IMAGEN_2  -->
+            <img class="imagen" width="200" src="{src}">
+            <input type="hidden" value="{id}" name="imagen_id[]" >
+            <!-- END BLOCK : IMAGEN_2 -->
+          </div>
+
+          <div class="group">
+            <label class="label" for="fondo_3" >Fondo 3: </label>
+            <input type="file" name="fondo_3" id="fondo_3" />
+            <!-- START BLOCK : IMAGEN_3  -->
+            <img class="imagen" width="200" src="{src}">
+            <input type="hidden" value="{id}" name="imagen_id[]" >
+            <!-- END BLOCK : IMAGEN_3 -->
+          </div>
+
+        </div>
+        <div class="column right"> 
+        </div>
+      </div>
+      <div class="group navform wat-cf">
+        {btn_save}
+        <span class="text_button_padding">or</span>
+        {close}
+      </div>
+      {end_form}
+    </div>
+  </div>
+</div>
+{js_promotion}
