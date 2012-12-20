@@ -59,7 +59,9 @@ class TplContainer
                 break;
         }
         
-        $tpl->assign("menu_users",$html->link('Users','admin/user/index/','','','submenu tit_submenu'));
+        $tpl->assign("menu_users",$html->link('Usuarios','admin/user/index/','','','submenu tit_submenu'));
+        $tpl->assign("menu_promotions",$html->link('Promociones','admin/promotion/index/','','','submenu tit_submenu'));
+        $tpl->assign("menu_fondos",$html->link('Fondos','admin/main/fondosHome/','','','submenu tit_submenu'));
         
         $tpl->assign("anio",date("Y"));
                 

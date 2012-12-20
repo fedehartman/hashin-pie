@@ -1,0 +1,45 @@
+<div class="block">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="first active">{list_link}</li>
+			<li >{new_link}</li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">Promociones</h2>
+		<div class="inner">
+			{msg_error}
+			<div style="clear:both;"></div>
+			<table class="stripeMe dragable_tbl table" id="ordered_table">
+				<tr id="skip_order" class="nodrag nodrop">
+					<th class="first"><input type="checkbox" class="checkbox toggle" /></th>
+					<th>Id</th>
+					<th>Titulo</th>
+					<th>Foto</th>
+					<th width="20" >&nbsp;</th>
+					<th width="20" class="last" style="width:20px;">&nbsp;</th>
+				</tr>
+				<!-- START BLOCK : listado -->
+				<tr id="{id}">
+					<td><input type="checkbox" class="checkbox_delete" name="id" value="{id}" /></td>
+					<td>{id}</td>
+					<td>{titulo}</td>
+					<td>{foto}</td>
+					<td>{edit}</td>
+					<td class="last"><a href="#" onclick="delete_row('{id}'); return false;" >{img_delete}</a></td>
+				</tr>
+				<!-- END BLOCK : listado -->
+			</table>
+			<div class="actions-bar wat-cf">
+				<div class="actions">
+					<button class="button" type="submit" onclick="deleteSelected(); return false;">
+					{icon_delete} Delete Selected
+					</button>
+					{new_btn}
+				</div>
+				{paginado}
+			</div>
+		</div>
+	</div>
+</div>
+{js_promotion}
