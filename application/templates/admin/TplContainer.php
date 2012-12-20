@@ -61,6 +61,7 @@ class TplContainer
         
         $tpl->assign("menu_users",$html->link('Usuarios','admin/user/index/','','','submenu tit_submenu'));
         $tpl->assign("menu_promotions",$html->link('Promociones','admin/promotion/index/','','','submenu tit_submenu'));
+        $tpl->assign("menu_fondos",$html->link('Fondos de la home','admin/promotion/index/','','','submenu tit_submenu'));
         
         $tpl->assign("anio",date("Y"));
                 
