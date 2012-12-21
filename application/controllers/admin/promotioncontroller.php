@@ -69,8 +69,32 @@ class PromotionController extends IugoController
 				$promotion = new Promotion();
 				if(safePostVar('id')){$promotion->id = safePostVar('id');}
 				$promotion->titulo = safePostVar('titulo');
-				$promotion->foto = safePostVar('foto');
 				$promotion->descripcion = safePostVar('descripcion');
+
+				$imagen = $_FILES['foto'];
+				if ($imagen) 
+				{
+                //print_r($imagen);die(); //Debug
+
+					$upload   = new IUGOFileUpload();
+					$upload->allow('images');
+					$upload->set_path(IMAGES_UPLOAD_DIR);
+					$upload->set_max_size(MAX_UPLOAD_FILESIZE * 1000000);
+					$filename = $upload->upload($imagen);
+					if ($upload->is_error())
+					{
+						if ($upload->_errno != "4")
+						{
+							$response->error =true;
+							$response->msg =$upload->get_error();
+						}
+					}else
+					{
+						$promotion->foto = $filename;
+
+					}
+				}
+
 				$promotion->save();
 
 				Session::instance()->setFlash(MSG_GUARDADO,'notice');
