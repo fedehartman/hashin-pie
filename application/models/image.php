@@ -17,4 +17,11 @@ class Image extends IugoModel
 		
 		$this->delete();
 	}
+
+ static function fondosHome()
+ {
+  $image = new Image();
+  $image->where('home',1);
+  return $image->search();
+}
 }

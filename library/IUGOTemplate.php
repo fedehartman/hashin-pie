@@ -17,6 +17,8 @@ class IUGOTemplate extends TemplatePower
 			$this->showTplMarks = true;
 			$this->prepare();
 			$this->assignGlobal('BASE_PATH',BASE_PATH);
+			$this->assignGlobal('CSS_PATH',BASE_PATH.'/css');
+			$this->assignGlobal('JS_PATH',BASE_PATH.'/js');
 		}
 		catch (Exception $ex)
 		{
