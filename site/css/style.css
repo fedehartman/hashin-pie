@@ -27,7 +27,7 @@ Some stuff made by Initializr | http://www.initializr.com/
 	}
 
 #qLbar {
-	background: #2d2d2d url(../img/backs/back1.jpg) no-repeat center center fixed; 
+	background: #2d2d2d url(../../img/front/backs/back1.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -73,7 +73,7 @@ html {font-family: Raleway, Arial, Helvetica, sans-serif;}
 ------------------------------------------------------------------------------------------------------------------------ |--*/
 
 body {
-	background: #c1e0cf url(../img/backs/back1.jpg) no-repeat center center fixed; 
+	background: #c1e0cf url(../../img/front/backs/back1.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -216,14 +216,14 @@ body {
 	height: 40px;
 	float: left;
 	margin: 18px 0px 0px 0px;
-	background: url(../img/common.png) no-repeat -320px 0px;
+	background: url(../../img/front/common.png) no-repeat -320px 0px;
 	}
 
 .modal-body {
 	width: 815px;
 	height: 390px;
 	margin: 20px 0px 0px 40px;
-	background: url(../img/ubicacion.png) no-repeat 0px 0px;
+	background: url(../../img/front/ubicacion.png) no-repeat 0px 0px;
 	}
 
 /*-*/
@@ -262,10 +262,10 @@ h1 a {
 	width: 220px;
 	height: 35px;
 	margin: 19px 0px 0px 0px;
-	background: url(../img/common.png) no-repeat 0px 0px;
+	background: url(../../img/front/common.png) no-repeat 0px 0px;
 	float: left;
 	}
-	h1 a:hover {background: url(../img/common.png) no-repeat 0px -35px;}
+	h1 a:hover {background: url(../../img/front/common.png) no-repeat 0px -35px;}
 
 nav.main-menu {
 	width: 700px;
@@ -382,7 +382,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	width: 15px;
 	height: 13px;
 	float: right;
-	background: url(../img/common.png) no-repeat no-repeat -220px 0px;
+	background: url(../../img/front/common.png) no-repeat no-repeat -220px 0px;
 	margin: 10px 7px 0px 0px;
 	}
 
@@ -396,7 +396,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 ---------------------------------------------------------------------------------------------------- |--*/
 
 .servicios {
-	background: url(../img/backs/back0.jpg) no-repeat center center;
+	background: url(../../img/front/backs/back0.jpg) no-repeat center center;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
    	   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
 	        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
@@ -425,7 +425,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	        border-radius: 3px;
 	width: 450px;
 	height: 300px;
-	background: url(../img/backs/back0.jpg) no-repeat center center;
+	background: url(../../img/front/backs/back0.jpg) no-repeat center center;
 	position: absolute;
 	z-index: 3;
 	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
@@ -537,10 +537,10 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	height: 20px;
 	margin: -4px 5px 0px 0px;
 	}
-	.btn-type-2 a i.promociones {background: url(../img/common.png) no-repeat -240px 0px;}
-	.btn-type-2 a i.ubicacion {background: url(../img/common.png) no-repeat -260px 0px;}
-	.btn-type-2 a i.reserva {background: url(../img/common.png) no-repeat -280px 0px;}
-	.btn-type-2 a i.consulta {background: url(../img/common.png) no-repeat -300px 0px;}
+	.btn-type-2 a i.promociones {background: url(../../img/front/common.png) no-repeat -240px 0px;}
+	.btn-type-2 a i.ubicacion {background: url(../../img/front/common.png) no-repeat -260px 0px;}
+	.btn-type-2 a i.reserva {background: url(../../img/front/common.png) no-repeat -280px 0px;}
+	.btn-type-2 a i.consulta {background: url(../../img/front/common.png) no-repeat -300px 0px;}
 
 
 
@@ -552,7 +552,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	max-width: 1920px;
 	height: 620px;
 	overflow: hidden;
-	background: #252525 url(../img/rayitas.png) repeat 0px 0px;
+	background: #252525 url(../../img/front/rayitas.png) repeat 0px 0px;
 	}
 
 .servicios_bot-wrapper {
@@ -626,7 +626,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 
 .servicios_bot-right .btn-type-2 a i {
 	margin: 1px 0px 0px 8px;
-	background: url(../img/common.png) no-repeat -220px 0px;
+	background: url(../../img/front/common.png) no-repeat -220px 0px;
 	}
 
 /*-*/
@@ -817,7 +817,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 ---------------------------------------------------------------------------------------------------- |--*/
 
 .contacto, .promos {
-	background: #f8f8f8 url(../img/rayitas2.png) repeat 0px 0px;
+	background: #f8f8f8 url(../../img/front/rayitas2.png) repeat 0px 0px;
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
 	   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
@@ -841,14 +841,14 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	width: 90px;
 	height: 90px;
 	float: right;
-	background: url(../img/common.png) no-repeat 0px -70px;
+	background: url(../../img/front/common.png) no-repeat 0px -70px;
 	}
 
 .contacto-content {
 	width: 910px;
 	height: 335px;
 	padding: 35px 35px 25px 35px;
-	background: #252525 url(../img/rayitas.png) repeat 0px 0px;
+	background: #252525 url(../../img/front/rayitas.png) repeat 0px 0px;
 	}
 
 .contacto-content-top {
@@ -1023,7 +1023,7 @@ input.enviar:active {background-color: #ba9a6a;}
 ---------------------------------------------------------------------------------------------------- |--*/
 
 .sep1 {
-	background: url(../img/backs/back2.jpg) no-repeat fixed center center;
+	background: url(../../img/front/backs/back2.jpg) no-repeat fixed center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1034,7 +1034,7 @@ input.enviar:active {background-color: #ba9a6a;}
 	}
 
 .sep2 {
-	background: url(../img/backs/back3.jpg) no-repeat fixed center center;
+	background: url(../../img/front/backs/back3.jpg) no-repeat fixed center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1227,9 +1227,9 @@ footer {
 	background-color: #21a656;
 	border-left: 1px solid #474747;
 	float: right;
-	background: url(../img/common.png) no-repeat -90px -70px;
+	background: url(../../img/front/common.png) no-repeat -90px -70px;
 	}
-	.iugo a:hover {background: url(../img/common.png) no-repeat -90px -95px;}
+	.iugo a:hover {background: url(../../img/front/common.png) no-repeat -90px -95px;}
 
 
 /*--| ------------------------------------------------------------------------------------------------------------------ |--*/
