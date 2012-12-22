@@ -74,8 +74,6 @@ class PromotionController extends IugoController
 				$imagen = $_FILES['foto'];
 				if ($imagen) 
 				{
-                //print_r($imagen);die(); //Debug
-
 					$upload   = new IUGOFileUpload();
 					$upload->allow('images');
 					$upload->set_path(IMAGES_UPLOAD_DIR);
