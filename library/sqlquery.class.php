@@ -664,9 +664,8 @@ class SQLQuery
                 $ignore = "IGNORE";
             }
 
-            $query = 'INSERT `' . $ignore . '` INTO ' . $this->_table . ' (' . $fields . ') VALUES (' . $values . ')';
+            $query = 'INSERT ' . $ignore . ' INTO ' . $this->_table . ' (' . $fields . ') VALUES (' . $values . ')';
         }
-        // die($query);
         $this->_result = mysql_query($query, $this->_dbHandle);
 
         if (!isset($this->id))

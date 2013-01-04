@@ -73,7 +73,7 @@ html {font-family: Raleway, Arial, Helvetica, sans-serif;}
 ------------------------------------------------------------------------------------------------------------------------ |--*/
 
 body {
-	background: #c1e0cf url(../../img/front/backs/back1.jpg) no-repeat center center fixed; 
+	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -396,7 +396,6 @@ nav.main-menu ul li:last-child a {border-right: none;}
 ---------------------------------------------------------------------------------------------------- |--*/
 
 .servicios {
-	background: url(../../img/front/backs/back0.jpg) no-repeat center center;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
    	   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
 	        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);

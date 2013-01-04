@@ -7,5 +7,5 @@ $routing = array(
         '/(.*)/(.*)/' => '\1/\2'//agrega site para ver todo el sitio
 );
 
-$default['controller'] = 'access';
-$default['action'] = 'login';
+$default['controller'] = 'home';
+$default['action'] = 'index';

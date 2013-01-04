@@ -50,7 +50,8 @@ function fondosHome()
         if($_FILES)
         {
             $id_imagenes = $_POST['imagen_id'];
-
+            //print_r($id_imagenes);die(); //Debug
+                
             foreach ($_FILES as $key => $imagen) 
             {
                 //print_r($imagen);die(); //Debug
@@ -58,10 +59,14 @@ function fondosHome()
                 $upload   = new IUGOFileUpload();
                 $upload->allow('images');
                 $upload->set_path(IMAGES_UPLOAD_DIR);
-                $upload->set_max_size(MAX_UPLOAD_FILESIZE * 1000000);
+                $upload->set_max_size(MAX_UPLOAD_FILESIZE * 10000000);
                 $filename = $upload->upload($imagen);
+                //print_r('error:'.$upload->is_error());die(); //Debug
+                    
                 if ($upload->is_error())
                 {
+                   // print_r($upload->_errno);die(); //Debug
+                        
                     if ($upload->_errno != "4")
                     {
                         $response->error =true;
@@ -70,9 +75,11 @@ function fondosHome()
                 }else
                 {
                     $image =  new Image();
-                    if($id_imagenes[$key])
+                   // print_r($key);die(); //Debug
+                        
+                    if($_POST[$key.'_id'])
                     {
-                        $image->id = $id_imagenes[$key];
+                        $image->id = $_POST[$key.'_id'];
                     }
                     $image->home =1;
                     $image->path = $filename;

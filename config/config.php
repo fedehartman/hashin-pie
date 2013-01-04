@@ -5,7 +5,7 @@ define('LOG_ERRORS',true);
 define('DB_NAME', 'piamonte');
 define('DB_USER', 'piamonte');
 define('DB_PASSWORD', 'piamonte');
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 define('APP_DIR', '/piamonte');
 define('BASE_PATH', 'http://localhost'.APP_DIR);
 
