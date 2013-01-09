@@ -37,12 +37,13 @@ class TplFrtContainer
       $galeria = Gallery::obtenerGaleria($tipo,$cantidadPersonas);
       $tpl->newBlock(strtoupper($tipo).'_PERSONAS');
       $tpl->assign('cantidad',$cantidadPersonas);
-      if($galeria)
+      if($galeria['Imagenes'])
       {
         $tpl->newBlock('GALERIA_'.strtoupper($tipo));
         $tpl->assign('clase',strtolower($tipo).'_'.$cantidadPersonas);
+        $tpl->assign('id_galeria',strtolower($tipo).'_'.$cantidadPersonas);
         foreach ($galeria['Imagenes'] as $imagen) {
-          $tpl->newBlock('IMAGEN_APARTAMENTO');
+          $tpl->newBlock('IMAGEN_'.strtoupper($tipo));
           $tpl->assign('src',IMAGES_DIR.$imagen['Image']['path']);
 
         }
@@ -51,6 +52,7 @@ class TplFrtContainer
 
     }
 
+    $tpl->gotoBlock('_ROOT');
 
   }
 

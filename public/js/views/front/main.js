@@ -3,21 +3,13 @@ $(document).ready(function() {
 	$('.apartamento').click(mostrarGaleriaApartamento);
 	$('.bungalow').click(mostrarGaleriaBungalow);
 
+	$('.lista-apartamentos li :eq(0) a').trigger('click');
+	$('.lista-bungalows li :eq(0) a').trigger('click');
+
 	$(document).scroll(function()
 	{
 
-		/*switch($(document).scrollTop())
-		{
-			case 0: 
-			$('.pelotita-active').removeClass('pelotita-active'); 
-			$('.pelotitas .pelotita').eq(0).addClass('pelotita-active');
-			break;
-
-			case 980: 
-			$('.pelotita-active').removeClass('pelotita-active'); 
-			$('.pelotitas .pelotita').eq(1).addClass('pelotita-active');
-			break;
-		}*/
+	
 
 		if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 979 )
 		{
@@ -100,7 +92,7 @@ $('.close').click(function(){
 
 function activarNavegacion(index)
 {
-	$('.active').removeClass('active');
+	$('.main-menu .active').removeClass('active');
 
 	if(index > 0)
 	{
@@ -132,6 +124,10 @@ function mostrarGaleriaBungalow(e)
 	var personas = $(this).data('personas');
 	$(this).parents('ul').find('.active').removeClass('active');
 	$(this).parent('li').addClass('active');
+
+	$('.galeria_bungalows').hide();
+
+	$('.bungalows_'+personas).show();
 
 	$('#personas').val(personas);
 
