@@ -47,33 +47,37 @@ class TplContainer
         $tpl->assign('BASE_PATH',BASE_PATH);
 
         $tpl->assign(array("usuario"=>logged_user()->nombre,
-                           "id_usuario"=>logged_user()->id));
+           "id_usuario"=>logged_user()->id));
 
         switch ($selected_menu)
         {
             case 'profile':
-                $tpl->assign('active_profile','active');
-                break;
+            $tpl->assign('active_profile','active');
+            break;
             case 'home': default:
-                $tpl->assign('active_home','active');
-                break;
+            $tpl->assign('active_home','active');
+            break;
         }
-        
-        $tpl->assign("menu_users",$html->link('Usuarios','admin/user/index/','','','submenu tit_submenu'));
-        $tpl->assign("menu_promotions",$html->link('Promociones','admin/promotion/index/','','','submenu tit_submenu'));
-        $tpl->assign("menu_fondos",$html->link('Fondos','admin/main/fondosHome/','','','submenu tit_submenu'));
-        
-        $tpl->assign("anio",date("Y"));
-                
-        return $tpl;
-    }
 
-    function getBlankContainer()
-    {
-        $html = new HTML();
-        $tpl = new IUGOTemplate("admin/blank_container.html");
-        return $tpl;
-    }
+
+
+     $tpl->assign("menu_users",$html->link('Usuarios','admin/user/index/','','','submenu tit_submenu'));
+     $tpl->assign("menu_promotions",$html->link('Promociones','admin/promotion/index/','','','submenu tit_submenu'));
+     $tpl->assign("menu_fondos",$html->link('Fondos','admin/main/fondosHome/','','','submenu tit_submenu'));
+     $tpl->assign("menu_slide",$html->link('Slides','admin/slide/index/','','','submenu tit_submenu'));
+     $tpl->assign("menu_galeria",$html->link('Galerias','admin/gallery/index/','','','submenu tit_submenu'));
+
+     $tpl->assign("anio",date("Y"));
+
+     return $tpl;
+ }
+
+ function getBlankContainer()
+ {
+    $html = new HTML();
+    $tpl = new IUGOTemplate("admin/blank_container.html");
+    return $tpl;
+}
 
 }
 ?>

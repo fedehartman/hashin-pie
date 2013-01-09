@@ -1,0 +1,94 @@
+<div class="block" >
+    <div class="secondary-navigation">
+        <ul class="wat-cf">
+            <li class="first">{list_users_link}</li>
+            <li class="active">{new_user_link}</li>
+        </ul>
+    </div>
+    <div class="content">
+        {msg_error}
+        <h2 class="title">Slides</h2>
+        <div style="clear:both;"></div>
+        <div class="inner">
+            {start_form}
+            <input type="hidden" name="id" id="id" value="{id}" />
+            <input type="hidden" name="submit" id="submit" value="true" />
+            <div class="columns wat-cf">
+                <div class="column left">
+                    <div class="group">
+                        <label class="label" for="nombre" >Nombre: </label>
+                        <input type="text" class="text_field" name="nombre" id="nombre" value="{nombre}" maxlength="200" />
+                    </div>
+
+                    <div class="group">
+                        <label class="label" for="fotos" >Fotos: <a onclick="return agregarFoto()">[Agregar]</a></label>
+
+                        <div id="contenedor-fotos"></div>
+                        
+                        <!-- START BLOCK : FOTO  -->
+                        <div class="foto foto_grande">
+                            <a class="borrar_foto">X</a>
+                            <img src="{src}"  height="60" />
+                            <input type="hidden" name="no_borrar[]" value="{id}">
+                        </div>
+                        <!-- END BLOCK : FOTO -->
+                        
+
+                    </div>
+
+                </div>
+                <div class="column right">                      
+
+                </div>
+            </div>
+            <div class="group navform wat-cf">
+                {btn_save}
+                <span class="text_button_padding">or</span>
+                {close}
+            </div>
+            {end_form}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var FOTOS = 1;
+$(document).ready(function(){
+    $('#form_projects').submit( function () { return validateGeneric('form_projects'); } );
+    $('.borrar_foto').click(borrarFoto);
+});
+
+
+function agregarFoto()
+{
+   var foto =  $('<div class="foto"><input type="file" name="foto-'+FOTOS+'"></div>').hide();
+
+   foto.appendTo($('#contenedor-fotos')).fadeIn();
+
+   FOTOS++;
+   return false;
+}
+
+function borrarFoto()
+{
+  $(this).parent('.foto').remove();
+}
+</script>
+
+<style type="text/css">
+.foto{
+    height:20px;
+    border:2px dotted #ccc;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.foto a{
+    float:right;
+    cursor:pointer;
+}
+.foto_grande
+{
+    height:60px;
+    width:150px;
+}
+</style>

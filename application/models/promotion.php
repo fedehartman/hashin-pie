@@ -12,9 +12,17 @@
 
 class Promotion extends IugoModel
 {
-	function completeDelete()
-	{
-		
-		$this->delete();
-	}
+
+  static function getAllPromos()
+  {
+    $promotion = new Promotion();
+    $promotions = $promotion->search();
+    return $promotions;
+  }
+
+  function completeDelete()
+  {
+    
+    $this->delete();
+  }
 }

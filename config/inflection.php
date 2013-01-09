@@ -9,4 +9,5 @@ $irregularWords = array(
 **/
 
 $irregularWords = array(
+  'promociones' => 'promociones' 
 );

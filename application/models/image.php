@@ -18,6 +18,13 @@ class Image extends IugoModel
 		$this->delete();
 	}
 
+  static function obtenerImagenesGaleria($id)
+  {
+    $image = new Image();
+    $imagenes = $image->custom("SELECT images.* FROM images,gallery_images WHERE gallery_images.gallery_id=".$id." and gallery_images.image_id = images.id ");
+    return $imagenes;   
+  }
+
  static function fondosHome()
  {
   $image = new Image();
