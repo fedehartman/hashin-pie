@@ -194,7 +194,7 @@ Credits: http://www.com/humans.txt
   <!--| A· SEPARADOR 1
   ==================================================================================================== |-->
 
-  <section class="section sep1" style="background: url({fondo_2}) no-repeat center center;
+  <section class="section sep1" style="background: url({fondo_2}) no-repeat center center fixed; 
   "></section>
 
 
@@ -317,7 +317,7 @@ Credits: http://www.com/humans.txt
   <!--| B· SEPARADOR 2
   ==================================================================================================== |-->
 
-  <section class="section sep2" style="background: url({fondo_3}) no-repeat center center;
+  <section class="section sep2" style="background: url({fondo_3}) no-repeat center center fixed;
   "></section>
 
 
@@ -330,7 +330,7 @@ Credits: http://www.com/humans.txt
 
     <div class="contacto-wrapper">
       <h3>Contacto & Reservas<i></i></h3>
-      <form>
+      <form id="formContacto">
         <div class="contacto-content">
           <div class="contacto-content-top">
             <div class="contacto-content-left">
@@ -339,13 +339,14 @@ Credits: http://www.com/humans.txt
               <label for="tel">Teléfono<input type="tel" name="tel" class="tel"></label>
               <p>Seleccione el motivo del contacto<i></i></p>
               <div class="contacto-botonera">
-                <div class="btn-type-2 left"><a href="#"><i class="reserva"></i>Reserva</a></div>
-                <div class="btn-type-2 left"><a href="#"><i class="consulta"></i>Consulta</a></div>
+                <div class="btn-type-2 left motivo" data-motivo="Reserva"><a href="#"><i class="reserva"></i>Reserva</a></div>
+                <div class="btn-type-2 left motivo" data-motivo="Consulta"><a href="#"><i class="consulta"></i>Consulta</a></div>
+                <input type="hidden" id="motivo" name="motivo">
               </div>
             </div>
             <div class="contacto-content-right">
               <label>Mensaje:</label>
-              <textarea></textarea>
+              <textarea name="mensaje"></textarea>
             </div>
           </div>
           <div class="lines"><canvas class="lines-top"></canvas><canvas class="lines-bot"></canvas></div>
@@ -353,7 +354,7 @@ Credits: http://www.com/humans.txt
             <label class="personas" for="personas">Nº de personas<input type="number" id="personas" name="personas" class="personas"></label>
             <label class="entrada" for="entrada">Fecha de Entrada<input type="date" name="entrada" class="entrada"></label>
             <label class="salida" for="salida">Fecha de Salida<input type="date" name="salida" class="salida"></label>
-            <input class="enviar" type="submit" value="Enviar">
+            <input class="enviar" type="button" id="enviarContacto" value="Enviar">
           </div>
         </div>
       </form>

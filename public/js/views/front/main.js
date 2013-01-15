@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$(document).scroll(function()
 	{
 
-	
+
 
 		if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 979 )
 		{
@@ -85,6 +85,38 @@ $('.ver-ubicacion').click(function(){
 
 $('.close').click(function(){
 	$(".modal").addClass('none');
+});
+
+$('.motivo').click(function()
+{
+	var motivo = $(this).data('motivo');
+	$('#motivo').val(motivo);
+	return false;
+});
+
+$('#enviarContacto').click(function()
+{
+	var params = $("#formContacto").serialize();
+	$.ajax({
+		type: "post",
+		url:  BASE_PATH+'/home/enviarContacto',
+		dataType: "json",
+		async: false,
+		data: params,
+		success: function(data) {
+			if(!data.error)
+			{
+				$('.enviar').hide();
+				$('.contacto-content-bot').append('<h4 style="color:white;">Gracias por comunicarte con nosotros.</h4>')
+			}else
+			{
+
+			}
+		},
+		error: function(request,status,errorThrown) {
+			
+		}
+	});
 });
 
 });

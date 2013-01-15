@@ -35,7 +35,7 @@ class TplGaleria
           "personas"=>$galeria['Gallery']['personas'],
           "edit"=>$html->link($html->image('admin/16x16/new.png','Edit'),'admin/gallery/add/'.$galeria['Gallery']['id']),
           "img_delete"=>$html->image('admin/16x16/delete.png','Delete')
-        ));
+          ));
     }
     $tpl->gotoBlock("_ROOT");
 
@@ -61,6 +61,12 @@ class TplGaleria
     $tpl->assign("end_form",$html->endForm(''));
 
     $tpl->assign('id',$galeria['Gallery']['id']);
+
+    foreach ($galeria['Imagenes'] as $foto) {
+      $tpl->newBlock('FOTO');
+      $tpl->assign('id',$foto['Image']['id']);
+      $tpl->assign('src',IMAGES_DIR.$foto['Image']['path']);
+    }
 
     return $tpl;
   }
@@ -105,7 +111,7 @@ class TplGaleria
         'new_link'=>$html->link('Add new','admin/promotion/add/'),
         'list_link'=>$html->link('List Promociones','admin/promotion/index/'),
         'icon_delete'=>$html->image('admin/icons/cross.png','Delete')
-      ));
+        ));
     return $tpl;
   }
 
