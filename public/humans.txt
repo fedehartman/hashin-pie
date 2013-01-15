@@ -1,0 +1,35 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# Click & Play Website was made by IuGo
+
+iuGo
+Website: http://www.iugo.com.uy/
+Contact: info [at] iugo.com.uy
+From: Montevideo, Uruguay
+
+
+#For this project:
+
+	Chief: Nicolás Medeiros
+	Contact: nicolas [at] iugo.com.uy
+	From: Montevideo, Uruguay
+
+	Chief Designer & Project Manager: Alfonso Medeiros
+	Contact: alfonso [at] iugo.com.uy
+	From: Montevideo, Uruguay
+
+	HTML/CSS Coding & some JS Programming: Fede Hartman
+	Contact: federico [at] iugo.com.uy
+	From: Montevideo, Uruguay
+
+
+# TECHNOLOGY COLOPHON
+
+	Site Name: Bungalows del Piemonte
+	Site URI: http://www.bungalowsdelpiemonte.com/
+	Version: 2.0
+	Design Date: Dic | 2012
+	Coding Date: Dic | 2012
+	HTML5, CSS3.
+	Made with: Photoshop, Sublime Text & Chrome.

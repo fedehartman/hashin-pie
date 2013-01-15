@@ -1,24 +1,7 @@
 /*
-Theme Name: XXXXX
-Site URI: http://
-Version: 1.0
-Design Date: May XX - Aug XX | 2012
-Coding Date: Aug XX - Sep XX | 2012
-Design: XXX | http:// - @xxx
-HTML/CSS, jQuery: XXX | http:// - @xxx
-Some stuff made by Initializr | http://www.initializr.com/
+Site Name: Bungalows del Piemonte.com
+Credits: http://www.bungalowsdelpiemonte.com/humans.txt
 */
-
-
-/*--| IMPORT
------------------------------------------------------------------------------------------------------------------------- |--*/
-
-/*@import "xx.css";*/
-
-/*-*/
-
-
-
 
 
 #qLpercentage {
@@ -338,7 +321,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 .home article {
 	width: 1000px;
 	height: 220px;
-	margin: -180px 0px 0px -500px;
+	margin: -200px 0px 0px -500px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -347,9 +330,10 @@ nav.main-menu ul li:last-child a {border-right: none;}
 
 .home article h2 {
 	font: 500 6em/1.2em Raleway, Arial, Helvetica, sans-serif;
-	color: #fff;
+	color: rgba(46, 46, 46, 0.63);
 	margin: 0px 0px 20px 0px;
-	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
+	text-align: center;
 	}
 
 .btn-type-1 a {
@@ -361,7 +345,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	text-align: center;
 	padding: 0px 5px 0px 5px;
 	text-transform: uppercase;
-	background-color: #ccc0b3;
+	background-color: #d2a369;
 	margin: 10px auto 0px auto;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -370,9 +354,9 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	   -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.32);
 	        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.32);
 	}
-	.btn-type-1 a:hover {background-color: #d2a369}
+	.btn-type-1 a:hover {background-color: #b88e5c; color: #f5e3cb;}
 	.btn-type-1 a:active {
-		background-color: #d2a369;
+		background-color: #9e7b4f;
 		-webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.32);
 	       -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.32);
 	            box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.32);
@@ -675,7 +659,7 @@ nav.main-menu ul li:last-child a {border-right: none;}
 	float: right;
 	width: 425px;
 	height: 65px;
-	margin: 90px 30px 0px 0px;
+	margin: 90px 30px 20px 0px;
 	}
 
 .aptos-num li a {
@@ -725,80 +709,16 @@ nav.main-menu ul li:last-child a {border-right: none;}
 /*--| GALERÍA
 -------------------------------------------------------------------------------- |--*/
 
-.es-carousel-wrapper {
-	width: 295px;
-	margin: 270px 0px 0px 25px;
-	}
-
-.es-carousel {overflow: hidden;}
-
-.es-carousel ul {display:none;}
-
-.es-carousel ul li {
-	height: 100%;
-	float: left;
-	display: block;
-	}
-
-.es-carousel ul li a {
-	width: 65px;
-	height: 35px;
-	display: block;
-	margin: 5px 5px 5px 5px;
-	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
-	   -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
-	        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
-	-webkit-touch-callout: none;
-	-webkit-transition: all 0.2s ease-in-out;
-	   -moz-transition: all 0.2s ease-in-out;
-	     -o-transition: all 0.2s ease-in-out;
-	    -ms-transition: all 0.2s ease-in-out;
-	        transition: all 0.2s ease-in-out;
-	}
-
-.es-carousel ul li a img {
-	display: block;
-	border: none;
-	max-height: 100%;
-	max-width: 100%;
-	}
-
-.es-nav span {
-	position:absolute;
-	top:50%;
-	left:8px;
-	background-color: #8b21a6;
-	width:14px;
-	height:26px;
-	margin-top:-13px;
-	text-indent:-9000px;
-	cursor:pointer;
-	opacity:0.8;
-	}
-
-.rg-image-wrapper {
-	width: 450px;
-	height: 240px;
-	position: relative;
-	background-color: #8b21a6;
-	margin: -290px 0px 0px 30px;
-	}
-
-.rg-image {
-	width: 450px;
-	height: 240px;
-	position: relative;
-	text-align: center;
-	}
 
 .apto-botonera {
-	width: 165px;
-	height: 35px;
-	margin: 0px 0px 0px 320px;
+	width: 265px;
+	height: 45px;
+	float: right;
+	margin: 0px 30px 0px 320px;
 	}
 
 .apto-botonera-line {
-	width: 35px;
+	width: 135px;
 	height: 1px;
 	margin-top: 24px;
 	background-color: #9e845e;
@@ -1130,9 +1050,14 @@ input.enviar:active {background-color: #ba9a6a;}
 	}
 
 .promo-text {
-	width: 610px;
-	height: 150px;
-	margin: 20px 0px 5px 0px;
+	width: 580px;
+	height: 145px;
+	padding: 20px 15px 10px 15px;
+	margin: 0px 0px 5px 0px;
+	font: normal 1.4em/1.8em Raleway, Arial, Helvetica, sans-serif;
+	color: #707070;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.65);
 	}
 
 .promo-text p {

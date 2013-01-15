@@ -2,11 +2,11 @@
 define('DEVELOPMENT_ENVIRONMENT',true);
 define('LOG_ERRORS',true);
 
-define('DB_NAME', 'piamonte');
-define('DB_USER', 'piamonte');
-define('DB_PASSWORD', 'piamonte');
-define('DB_HOST', '127.0.0.1');
-define('APP_DIR', '/piamonte');
+define('DB_NAME', 'piemonte');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
+define('DB_HOST', 'localhost');
+define('APP_DIR', '/piamonte/hashin-pie');
 define('BASE_PATH', 'http://localhost'.APP_DIR);
 
 define('TITLE','CMS');
